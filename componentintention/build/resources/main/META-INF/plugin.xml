@@ -1,0 +1,27 @@
+<idea-plugin>
+  <version>1.0-SNAPSHOT</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="181.4445" until-build="181.*"/>
+  <id>componentintention</id>
+  <name>ComponentIntention</name>
+  <vendor email="test@test.com" url="http://www.test.com">Testing</vendor>
+  <description>
+    Component Test Intention Plugin.&lt;br&gt;
+    &lt;em&gt;most HTML tags may be used&lt;/em&gt;
+    </description>
+  <depends>com.intellij.modules.lang</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <intentionAction>
+      <className>com.jas.componentintention.CreateComponentTestAction</className>
+      <category>Java/Declaration</category>
+      <descriptionDirectoryName>CreateComponentTestAction</descriptionDirectoryName>
+    </intentionAction>
+  </extensions>
+  <project-components>
+    <component>
+      <implementation-class>com.jas.componentintention.CreateComponentTestAction</implementation-class>
+    </component>
+  </project-components>
+</idea-plugin>

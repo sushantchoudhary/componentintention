@@ -1,0 +1,378 @@
+2018-05-07 14:10:46,091 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2018-05-07 14:10:48,106 [   2015]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-181.4445.78, 10 Apr 2018 06:48) 
+2018-05-07 14:10:48,106 [   2015]   INFO -        #com.intellij.idea.Main - OS: Mac OS X (10.13.3, x86_64) 
+2018-05-07 14:10:48,106 [   2015]   INFO -        #com.intellij.idea.Main - JRE: 1.8.0_152-release-1136-b27 (JetBrains s.r.o) 
+2018-05-07 14:10:48,106 [   2015]   INFO -        #com.intellij.idea.Main - JVM: 25.152-b27 (OpenJDK 64-Bit Server VM) 
+2018-05-07 14:10:48,116 [   2025]   INFO -        #com.intellij.idea.Main - JVM Args: -Dapple.laf.useScreenMenuBar=true -Didea.classpath.index.enabled=false -Didea.config.path=/Users/schoudhary/Development/componentintention/componentintention/build/idea-sandbox/config -Didea.is.internal=true -Didea.platform.prefix=Idea -Didea.plugins.path=/Users/schoudhary/Development/componentintention/componentintention/build/idea-sandbox/plugins -Didea.required.plugins.id=componentintention -Didea.smooth.progress=false -Didea.system.path=/Users/schoudhary/Development/componentintention/componentintention/build/idea-sandbox/system -XX:MaxPermSize=250m -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -ea 
+2018-05-07 14:10:48,117 [   2026]   INFO -        #com.intellij.idea.Main - ext: /Users/schoudhary/.gradle/caches/modules-2/files-2.1/com.jetbrains/jbre/jbrex8u152b1136.27_osx_x64/jdk/Contents/Home/jre/lib/ext: [sunec.jar, nashorn.jar, cldrdata.jar, jfxrt.jar, dnsns.jar, localedata.jar, sunjce_provider.jar, meta-index, sunpkcs11.jar, jaccess.jar, zipfs.jar] 
+2018-05-07 14:10:48,117 [   2026]   INFO -        #com.intellij.idea.Main - ext: /Library/Java/Extensions: [libwrapper.jnilib] 
+2018-05-07 14:10:48,117 [   2026]   INFO -        #com.intellij.idea.Main - ext: /System/Library/Java/Extensions: [MRJToolkit.jar] 
+2018-05-07 14:10:48,117 [   2026]   INFO -        #com.intellij.idea.Main - JNU charset: UTF-8 
+2018-05-07 14:10:48,135 [   2044]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 18 ms 
+2018-05-07 14:10:48,150 [   2059]   INFO -        #com.intellij.idea.Main - initializing environment 
+2018-05-07 14:10:48,151 [   2060]   INFO - .intellij.util.EnvironmentUtil - loading shell env: /bin/zsh -l -i -c '/Users/schoudhary/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2018.1.1/a16155434ed1005cff114e67172b6bf09b7456b5/ideaIC-2018.1.1/bin/printenv.py' '/private/var/folders/26/5pwkkbhd24z6gwjzm3bcf_r08rpvk_/T/intellij-shell-env.tmp' 
+2018-05-07 14:10:49,078 [   2987]   INFO - .intellij.util.EnvironmentUtil - shell environment loaded (52 vars) 
+2018-05-07 14:10:49,360 [   3269]   INFO -     #com.intellij.util.ui.JBUI - User scale factor: 1.0 
+2018-05-07 14:10:49,360 [   3269]   INFO -     #com.intellij.util.ui.JBUI - System scale factor: 2.0 (JRE-managed HiDPI) 
+2018-05-07 14:10:49,518 [   3427]   WARN -     #com.intellij.ui.AppUIUtil -  
+java.lang.reflect.InvocationTargetException
+	at java.awt.EventQueue.invokeAndWait(EventQueue.java:1327)
+	at java.awt.EventQueue.invokeAndWait(EventQueue.java:1302)
+	at javax.swing.SwingUtilities.invokeAndWait(SwingUtilities.java:1348)
+	at com.intellij.ui.AppUIUtil.showUserAgreementAndConsentsIfNeeded(AppUIUtil.java:272)
+	at com.intellij.idea.StartupUtil.prepareAndStart(StartupUtil.java:142)
+	at com.intellij.idea.MainImpl.start(MainImpl.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.intellij.ide.plugins.PluginManager.lambda$start$0(PluginManager.java:77)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.intellij.openapi.wm.WindowManager.getInstance(WindowManager.java:61)
+	at com.intellij.openapi.wm.ex.WindowManagerEx.getInstanceEx(WindowManagerEx.java:40)
+	at com.intellij.ui.AppUIUtil.confirmConsentOptions(AppUIUtil.java:372)
+	at com.intellij.ui.AppUIUtil.lambda$showUserAgreementAndConsentsIfNeeded$3(AppUIUtil.java:272)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:301)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:762)
+	at java.awt.EventQueue.access$500(EventQueue.java:98)
+	at java.awt.EventQueue$3.run(EventQueue.java:715)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:732)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-07 14:10:49,524 [   3433]   INFO - .intellij.idea.IdeaApplication - CPU cores: 8; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@773d9394[Running, parallelism = 7, size = 0, active = 0, running = 0, steals = 0, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@7b99818e 
+2018-05-07 14:10:50,317 [   4226]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor duplicates-groovy.xml 
+2018-05-07 14:10:50,690 [   4599]   INFO - llij.ide.plugins.PluginManager - 35 plugins initialized in 720 ms 
+2018-05-07 14:10:50,693 [   4602]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: Android Support (10.3.0), Ant Support (1.0), Bytecode Viewer (0.1), CVS Integration (11), Copyright (8.1), Coverage (181.4445.78), Eclipse Integration (3.0), EditorConfig (181.4445.78), Git Integration (8.1), GitHub (181.4445.78), Gradle (181.4445.78), Groovy (9.0), I18n for Java (181.4445.78), IDEA CORE (181.4445.78), IntelliLang (8.0), JUnit (1.0), Java Bytecode Decompiler (181.4445.78), Java Stream Debugger (181.4445.78), JavaFX (1.0), Kotlin (1.2.31-release-IJ2018.1-1), Maven Integration (181.4445.78), Mercurial Integration (10.0), Plugin DevKit (1.0), Properties Support (181.4445.78), Settings Repository (181.4445.78), Smali Support (1.0), Subversion Integration (1.1), Task Management (1.0), Terminal (0.1), TestNG-J (8.0), UI Designer (181.4445.78), XPathView + XSLT Support (4), XSLT-Debugger (1.4), YAML (181.4445.78) 
+2018-05-07 14:10:50,693 [   4602]   INFO - llij.ide.plugins.PluginManager - Loaded custom plugins: ComponentIntention (1.0-SNAPSHOT) 
+2018-05-07 14:10:51,421 [   5330]   INFO - ellij.vfs.persistent.FSRecords - Marking VFS as corrupted: '/Users/schoudhary/Development/componentintention/componentintention/build/idea-sandbox/system/caches/names.dat' does not exist 
+2018-05-07 14:10:51,422 [   5331]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=435; buffer=10; max=435 
+2018-05-07 14:10:51,450 [   5359]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: /Users/schoudhary/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIC/2018.1.1/a16155434ed1005cff114e67172b6bf09b7456b5/ideaIC-2018.1.1/bin/mac/fsnotifier 
+2018-05-07 14:10:51,463 [   5372]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2018-05-07 14:10:51,953 [   5862]   WARN - nSystem.impl.ActionManagerImpl - keymap "Xcode" not found [Plugin: Git4Idea] 
+2018-05-07 14:10:51,973 [   5882]   WARN - nSystem.impl.ActionManagerImpl - keymap "Xcode" not found [Plugin: hg4idea] 
+2018-05-07 14:10:52,016 [   5925]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2018-05-07 14:10:52,016 [   5925]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2018-05-07 14:10:52,173 [   6082]   INFO - .openapi.application.Preloader - Finished preloading com.intellij.ide.ui.OptionsTopHitProvider$Activity@49d8ecff 
+2018-05-07 14:10:52,264 [   6173]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2018-05-07 14:10:52,282 [   6191]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63343 
+2018-05-07 14:10:52,368 [   6277]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2018-05-07 14:10:52,576 [   6485]   INFO - il.indexing.FileBasedIndexImpl - Index exts enumerated:164, number of extensions:44 
+2018-05-07 14:10:52,580 [   6489]   INFO - il.indexing.FileBasedIndexImpl - Index scheduled:4 
+2018-05-07 14:10:52,612 [   6521]   INFO - tellij.psi.stubs.StubIndexImpl - All stub exts enumerated:30, number of extensions:49 
+2018-05-07 14:10:52,613 [   6522]   INFO - tellij.psi.stubs.StubIndexImpl - stub exts update scheduled:0 
+2018-05-07 14:10:53,021 [   6930]   INFO - ij.psi.stubs.StubUpdatingIndex - Following new file types will be indexed:Groovy,XML,Kotlin,JAVA,KJSM,CLASS,HTML,kotlin_builtins,Properties 
+2018-05-07 14:10:53,284 [   7193]   INFO - plication.impl.ApplicationImpl - 89 application components initialized in 3317ms 
+2018-05-07 14:10:53,310 [   7219]   INFO - .intellij.idea.IdeaApplication - App initialization took 7915 ms 
+2018-05-07 14:10:53,311 [   7220]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.kotlin loaded 773 classes 
+2018-05-07 14:10:53,311 [   7220]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.android loaded 254 classes 
+2018-05-07 14:10:53,311 [   7220]   INFO - llij.ide.plugins.PluginManager - org.intellij.groovy loaded 178 classes 
+2018-05-07 14:10:53,311 [   7220]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.idea.maven loaded 69 classes 
+2018-05-07 14:10:53,311 [   7220]   INFO - llij.ide.plugins.PluginManager - CVS loaded 42 classes 
+2018-05-07 14:10:53,311 [   7220]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.settingsRepository loaded 31 classes 
+2018-05-07 14:10:53,311 [   7220]   INFO - llij.ide.plugins.PluginManager - com.intellij.properties loaded 28 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - com.intellij.uiDesigner loaded 24 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - Git4Idea loaded 22 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - com.intellij.tasks loaded 22 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - hg4idea loaded 21 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - Subversion loaded 19 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - AntSupport loaded 18 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - XPathView loaded 18 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.plugins.github loaded 14 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.plugins.yaml loaded 13 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.plugins.javaFX loaded 11 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.plugins.gradle loaded 10 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - DevKit loaded 9 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.java.decompiler loaded 5 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - com.android.tools.idea.smali loaded 5 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - com.intellij.copyright loaded 3 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - ByteCodeViewer loaded 2 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.idea.eclipse loaded 2 classes 
+2018-05-07 14:10:53,312 [   7221]   INFO - llij.ide.plugins.PluginManager - Coverage loaded 1 classes 
+2018-05-07 14:10:53,336 [   7245]   INFO - pl$FileIndexDataInitialization - Initialization done:755 
+2018-05-07 14:10:53,452 [   7361]   INFO - exImpl$StubIndexInitialization - Initialization done:116 
+2018-05-07 14:10:53,725 [   7634]   INFO - pi.util.registry.RegistryValue - Registry value 'java.completion.argument.hints' has changed to 'false" 
+2018-05-07 14:10:53,725 [   7634]   INFO - pi.util.registry.RegistryValue - Registry value 'java.completion.argument.hints.internal' has changed to 'false" 
+2018-05-07 14:10:53,755 [   7664]   INFO - com.intellij.ide.ui.UISettings - Loaded: fontSize=12, fontScale=1.0; restored: fontSize=12, fontScale=1.0 
+2018-05-07 14:10:54,088 [   7997]   INFO - j.ide.ui.OptionsTopHitProvider - 458 ms spent to cache options in application 
+2018-05-07 14:10:54,318 [   8227]   INFO - .openapi.application.Preloader - Finished preloading com.intellij.openapi.actionSystem.impl.ActionPreloader@5a26c0e0 
+2018-05-07 14:10:55,284 [   9193]   INFO - .openapi.application.Preloader - Finished preloading com.intellij.ide.ui.search.SearchableOptionPreloader@1390b0a2 
+2018-05-07 14:10:55,418 [   9327]   INFO - .openapi.application.Preloader - Finished preloading com.intellij.codeInsight.completion.CompletionPreloader@7521b4fa 
+2018-05-07 14:10:55,422 [   9331]   INFO - .openapi.application.Preloader - Finished preloading com.intellij.ide.actions.GotoClassPresentationUpdater@21cdd797 
+2018-05-07 14:11:01,342 [  15251]   INFO - ellij.project.impl.ProjectImpl - 20 project components initialized in 151 ms 
+2018-05-07 14:11:01,778 [  15687]   INFO - CompilerWorkspaceConfiguration - Available processors: 8 
+2018-05-07 14:11:42,940 [  56849]   INFO - ellij.project.impl.ProjectImpl - 155 project components initialized in 1017 ms 
+2018-05-07 14:11:42,941 [  56850]   INFO - le.impl.ModuleManagerComponent - 0 module(s) loaded in 0 ms 
+2018-05-07 14:11:43,169 [  57078]   INFO - penapi.project.DumbServiceImpl - cancel com.intellij.openapi.roots.impl.PushedFilePropertiesUpdaterImpl$3@5aaaaea 
+2018-05-07 14:11:43,175 [  57084]   INFO - penapi.project.DumbServiceImpl - cancel com.intellij.openapi.roots.impl.PushedFilePropertiesUpdaterImpl$3@5aaaaea 
+2018-05-07 14:11:43,199 [  57108]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2018-05-07 14:11:43,247 [  57156]   INFO - ntellij.internal.IconsLoadTime - PNG load time: total=34.95ms, average=0.35ms, median=0.61ms; number of icons: 100 
+2018-05-07 14:11:43,274 [  57183]   WARN - j.ui.mac.MacMainFrameDecorator - no url bundle present. 
+To use platform protocol handler to open external links specify required protocols in the mac app layout section of the build file
+Example: args.urlSchemes = ["your-protocol"] will handle following links: your-protocol://open?file=file&line=line 
+2018-05-07 14:11:43,761 [  57670]   INFO - CompilerBackwardReferenceIndex - backward reference index version differ due to: class java.io.FileNotFoundException 
+2018-05-07 14:11:44,033 [  57942]   INFO - ntellij.internal.IconsLoadTime - PNG load time: ide_startup=50.32ms, average=0.34ms, median=0.43ms; number of icons: 150 
+2018-05-07 14:11:44,110 [  58019]   INFO - ge.ExternalProjectsDataStorage - Loaded external projects data in 2 millis 
+2018-05-07 14:11:44,131 [  58040]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 121ms; general responsiveness: ok; EDT responsiveness: ok 
+2018-05-07 14:11:44,606 [  58515]   INFO - tartup.impl.StartupManagerImpl - /Users/schoudhary/IdeaProjects/untitled3/.idea case-sensitivity: expected=false actual=false 
+2018-05-07 14:11:44,614 [  58523]   INFO - pl.projectlevelman.NewMappings - VCS Root: [] - [<Project>] 
+2018-05-07 14:11:44,629 [  58538]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.intellij.util.indexing.UnindexedFilesUpdater@1f190333 
+2018-05-07 14:11:44,661 [  58570]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 3008 ms 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.kotlin loaded 2325 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.android loaded 1303 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - org.intellij.groovy loaded 547 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.idea.maven loaded 252 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - com.intellij.uiDesigner loaded 211 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - Git4Idea loaded 121 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.debugger.streams loaded 107 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - com.intellij.tasks loaded 106 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - CVS loaded 85 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.plugins.gradle loaded 83 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - XPathView loaded 77 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - Subversion loaded 70 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - com.intellij.properties loaded 54 classes 
+2018-05-07 14:11:44,662 [  58571]   INFO - llij.ide.plugins.PluginManager - hg4idea loaded 50 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - com.intellij.copyright loaded 42 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - DevKit loaded 41 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.settingsRepository loaded 39 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - Coverage loaded 39 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - AntSupport loaded 31 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.plugins.github loaded 25 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.plugins.javaFX loaded 23 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - org.intellij.intelliLang loaded 20 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.plugins.yaml loaded 19 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - JUnit loaded 14 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - TestNG-J loaded 13 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.plugins.terminal loaded 11 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - org.editorconfig.editorconfigjetbrains loaded 9 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.java.decompiler loaded 7 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - org.jetbrains.idea.eclipse loaded 5 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - com.android.tools.idea.smali loaded 5 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - com.intellij.java-i18n loaded 4 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - ByteCodeViewer loaded 3 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - XSLT-Debugger loaded 2 classes 
+2018-05-07 14:11:44,663 [  58572]   INFO - llij.ide.plugins.PluginManager - componentintention loaded 1 classes 
+2018-05-07 14:11:44,672 [  58581]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 7ms; general responsiveness: ok; EDT responsiveness: ok 
+2018-05-07 14:11:47,300 [  61209]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 2627ms; general responsiveness: ok; EDT responsiveness: ok 
+2018-05-07 14:11:47,314 [  61223]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update started: 50921 files to update 
+2018-05-07 14:11:47,477 [  61386]   INFO - penapi.project.DumbServiceImpl - cancel com.intellij.util.indexing.UnindexedFilesUpdater@1f190333 
+2018-05-07 14:11:47,483 [  61392]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update canceled 
+2018-05-07 14:11:47,488 [  61397]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: initial refresh 
+2018-05-07 14:11:47,491 [  61400]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.intellij.util.indexing.UnindexedFilesUpdater@56fc7972 
+2018-05-07 14:11:47,491 [  61400]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 0ms; general responsiveness: ok; EDT responsiveness: ok 
+2018-05-07 14:11:47,967 [  61876]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 475ms; general responsiveness: ok; EDT responsiveness: ok 
+2018-05-07 14:11:47,980 [  61889]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update started: 50919 files to update 
+2018-05-07 14:11:55,500 [  69409]   INFO - rojectCodeStyleSettingsManager - Initialized from default code style settings. 
+2018-05-07 14:12:05,011 [  78920]   INFO - .openapi.util.LowMemoryWatcher - Low memory signal received. 
+2018-05-07 14:12:11,386 [  85295]   INFO - .diagnostic.PerformanceWatcher - Unindexed files update took 23406ms; general responsiveness: ok; EDT responsiveness: 3/24 sluggish 
+2018-05-07 14:12:11,388 [  85297]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2018-05-07 14:12:11,389 [  85298]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/Users/schoudhary/IdeaProjects/untitled3' untitled3 
+2018-05-07 14:12:11,756 [  85665]   INFO - j.ide.ui.OptionsTopHitProvider - 133 ms spent to cache options in project 
+2018-05-07 14:12:11,787 [  85696]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$PruneTask@1dca6ef9 
+2018-05-07 14:12:11,814 [  85723]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRepositoryFileCacheImpl$ManageLruProjectFilesTask@71403153 
+2018-05-07 14:12:11,968 [  85877]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2018-05-07 14:12:11,969 [  85878]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/Users/schoudhary/IdeaProjects/untitled3' untitled3 
+2018-05-07 14:12:12,050 [  85959]   INFO - penapi.project.DumbServiceImpl - Running dumb mode task: com.android.tools.idea.res.ResourceFolderRegistry$PopulateCachesTask@10d23f2f 
+2018-05-07 14:12:12,063 [  85972]   INFO - penapi.project.DumbServiceImpl - updateFinished 
+2018-05-07 14:12:12,064 [  85973]   INFO - g.FileBasedIndexProjectHandler - Has changed files: false; project=Project '/Users/schoudhary/IdeaProjects/untitled3' untitled3 
+2018-05-07 14:12:12,238 [  86147]   INFO -       ScriptTemplatesProviders - [kts] loading script definitions [] using cp:  
+2018-05-07 14:12:17,686 [  91595]  ERROR - n.impl.NoSwingUnderWriteAction - AWT events are not allowed inside write action: sun.awt.PeerEvent[INVOCATION_DEFAULT,runnable=sun.lwawt.LWCursorManager$1@4047f149,notifier=null,catchExceptions=false,when=1525666337682] on frame1 
+java.lang.Throwable: AWT events are not allowed inside write action: sun.awt.PeerEvent[INVOCATION_DEFAULT,runnable=sun.lwawt.LWCursorManager$1@4047f149,notifier=null,catchExceptions=false,when=1525666337682] on frame1
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.openapi.application.impl.NoSwingUnderWriteAction.lambda$watchForEvents$0(NoSwingUnderWriteAction.java:36)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:406)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	at java.awt.Dialog.show(Dialog.java:1077)
+	at java.awt.Component.show(Component.java:1679)
+	at java.awt.Component.setVisible(Component.java:1631)
+	at java.awt.Window.setVisible(Window.java:1014)
+	at java.awt.Dialog.setVisible(Dialog.java:998)
+	at com.intellij.ui.messages.SheetMessage.<init>(SheetMessage.java:138)
+	at com.intellij.ui.messages.JBMacMessages.showYesNoDialog(JBMacMessages.java:167)
+	at com.intellij.openapi.ui.Messages.showOkCancelDialog(Messages.java:539)
+	at com.intellij.openapi.ui.Messages.showOkCancelDialog(Messages.java:555)
+	at com.intellij.openapi.ui.Messages.showOkCancelDialog(Messages.java:563)
+	at com.jas.componentintention.CreateComponentTestAction.invoke(CreateComponentTestAction.java:60)
+	at com.intellij.codeInsight.intention.PsiElementBaseIntentionAction.invoke(PsiElementBaseIntentionAction.java:43)
+	at com.intellij.codeInsight.intention.impl.config.IntentionActionWrapper.invoke(IntentionActionWrapper.java:67)
+	at com.intellij.codeInsight.intention.impl.IntentionActionWithTextCaching$MyIntentionAction.invoke(IntentionActionWithTextCaching.java:181)
+	at com.intellij.codeInsight.intention.impl.ShowIntentionActionsHandler.lambda$invokeIntention$3(ShowIntentionActionsHandler.java:211)
+	at com.intellij.openapi.application.WriteAction.run(WriteAction.java:90)
+	at com.intellij.codeInsight.intention.impl.ShowIntentionActionsHandler.invokeIntention(ShowIntentionActionsHandler.java:213)
+	at com.intellij.codeInsight.intention.impl.ShowIntentionActionsHandler.lambda$null$1(ShowIntentionActionsHandler.java:188)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransactionAndWait(TransactionGuardImpl.java:153)
+	at com.intellij.codeInsight.intention.impl.ShowIntentionActionsHandler.lambda$chooseActionAndInvoke$2(ShowIntentionActionsHandler.java:187)
+	at com.intellij.openapi.command.impl.CoreCommandProcessor.executeCommand(CoreCommandProcessor.java:137)
+	at com.intellij.openapi.command.impl.CoreCommandProcessor.executeCommand(CoreCommandProcessor.java:95)
+	at com.intellij.openapi.command.impl.CoreCommandProcessor.executeCommand(CoreCommandProcessor.java:85)
+	at com.intellij.openapi.command.impl.CoreCommandProcessor.executeCommand(CoreCommandProcessor.java:71)
+	at com.intellij.codeInsight.intention.impl.ShowIntentionActionsHandler.chooseActionAndInvoke(ShowIntentionActionsHandler.java:186)
+	at com.intellij.codeInsight.intention.impl.IntentionListStep.lambda$applyAction$1(IntentionListStep.java:293)
+	at com.intellij.openapi.application.TransactionGuardImpl.performUserActivity(TransactionGuardImpl.java:195)
+	at com.intellij.ui.popup.AbstractPopup.lambda$dispose$7(AbstractPopup.java:1398)
+	at com.intellij.util.ui.UIUtil.invokeLaterIfNeeded(UIUtil.java:2850)
+	at com.intellij.ide.IdeEventQueue.ifFocusEventsInTheQueue(IdeEventQueue.java:168)
+	at com.intellij.ide.IdeEventQueue.executeWhenAllFocusEventsLeftTheQueue(IdeEventQueue.java:132)
+	at com.intellij.openapi.wm.impl.FocusManagerImpl.doWhenFocusSettlesDown(FocusManagerImpl.java:190)
+	at com.intellij.openapi.wm.impl.IdeFocusManagerImpl.doWhenFocusSettlesDown(IdeFocusManagerImpl.java:56)
+	at com.intellij.ui.popup.AbstractPopup.dispose(AbstractPopup.java:1392)
+	at com.intellij.ui.popup.WizardPopup.dispose(WizardPopup.java:160)
+	at com.intellij.ui.popup.list.ListPopupImpl.dispose(ListPopupImpl.java:307)
+	at com.intellij.openapi.util.Disposer$1.execute(Disposer.java:48)
+	at com.intellij.openapi.util.Disposer$1.execute(Disposer.java:44)
+	at com.intellij.openapi.util.objectTree.ObjectNode$1.execute(ObjectNode.java:138)
+	at com.intellij.openapi.util.objectTree.ObjectNode$1.execute(ObjectNode.java:107)
+	at com.intellij.openapi.util.objectTree.ObjectTree.executeActionWithRecursiveGuard(ObjectTree.java:169)
+	at com.intellij.openapi.util.objectTree.ObjectNode.execute(ObjectNode.java:107)
+	at com.intellij.openapi.util.objectTree.ObjectTree.executeAll(ObjectTree.java:144)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:129)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:125)
+	at com.intellij.ui.popup.WizardPopup.disposeAllParents(WizardPopup.java:263)
+	at com.intellij.ui.popup.list.ListPopupImpl.handleNextStep(ListPopupImpl.java:442)
+	at com.intellij.ui.popup.list.ListPopupImpl._handleSelect(ListPopupImpl.java:396)
+	at com.intellij.ui.popup.list.ListPopupImpl.handleSelect(ListPopupImpl.java:337)
+	at com.intellij.ui.popup.list.ListPopupImpl$1.actionPerformed(ListPopupImpl.java:250)
+	at com.intellij.ui.popup.WizardPopup.proceedKeyEvent(WizardPopup.java:378)
+	at com.intellij.ui.popup.WizardPopup.dispatch(WizardPopup.java:358)
+	at com.intellij.ui.popup.PopupDispatcher.dispatchKeyEvent(PopupDispatcher.java:126)
+	at com.intellij.ui.popup.PopupDispatcher.dispatch(PopupDispatcher.java:160)
+	at com.intellij.ide.IdePopupManager.dispatch(IdePopupManager.java:87)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:674)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:395)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-07 14:12:17,688 [  91597]  ERROR - n.impl.NoSwingUnderWriteAction - IntelliJ IDEA 2018.1.1  Build #IC-181.4445.78 
+2018-05-07 14:12:17,688 [  91597]  ERROR - n.impl.NoSwingUnderWriteAction - JDK: 1.8.0_152-release 
+2018-05-07 14:12:17,688 [  91597]  ERROR - n.impl.NoSwingUnderWriteAction - VM: OpenJDK 64-Bit Server VM 
+2018-05-07 14:12:17,688 [  91597]  ERROR - n.impl.NoSwingUnderWriteAction - Vendor: JetBrains s.r.o 
+2018-05-07 14:12:17,688 [  91597]  ERROR - n.impl.NoSwingUnderWriteAction - OS: Mac OS X 
+2018-05-07 14:12:17,688 [  91597]  ERROR - n.impl.NoSwingUnderWriteAction - Last Action: ShowIntentionActions 
+2018-05-07 14:12:17,688 [  91597]  ERROR - n.impl.NoSwingUnderWriteAction - Current Command: Create Component Test 
+2018-05-07 14:12:34,787 [ 108696]  ERROR - n.impl.NoSwingUnderWriteAction - AWT events are not allowed inside write action: sun.awt.PeerEvent[INVOCATION_DEFAULT,runnable=sun.lwawt.LWCursorManager$1@3b74f981,notifier=null,catchExceptions=false,when=1525666354755] on frame1 
+java.lang.Throwable: AWT events are not allowed inside write action: sun.awt.PeerEvent[INVOCATION_DEFAULT,runnable=sun.lwawt.LWCursorManager$1@3b74f981,notifier=null,catchExceptions=false,when=1525666354755] on frame1
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:123)
+	at com.intellij.openapi.application.impl.NoSwingUnderWriteAction.lambda$watchForEvents$0(NoSwingUnderWriteAction.java:36)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:406)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:190)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:235)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:233)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:233)
+	at java.awt.Dialog.show(Dialog.java:1077)
+	at java.awt.Component.show(Component.java:1679)
+	at java.awt.Component.setVisible(Component.java:1631)
+	at java.awt.Window.setVisible(Window.java:1014)
+	at java.awt.Dialog.setVisible(Dialog.java:998)
+	at com.intellij.ui.messages.SheetMessage.<init>(SheetMessage.java:138)
+	at com.intellij.ui.messages.JBMacMessages.showYesNoDialog(JBMacMessages.java:167)
+	at com.intellij.openapi.ui.Messages.showOkCancelDialog(Messages.java:539)
+	at com.intellij.openapi.ui.Messages.showOkCancelDialog(Messages.java:555)
+	at com.intellij.openapi.ui.Messages.showOkCancelDialog(Messages.java:563)
+	at com.jas.componentintention.CreateComponentTestAction.invoke(CreateComponentTestAction.java:60)
+	at com.intellij.codeInsight.intention.PsiElementBaseIntentionAction.invoke(PsiElementBaseIntentionAction.java:43)
+	at com.intellij.codeInsight.intention.impl.config.IntentionActionWrapper.invoke(IntentionActionWrapper.java:67)
+	at com.intellij.codeInsight.intention.impl.IntentionActionWithTextCaching$MyIntentionAction.invoke(IntentionActionWithTextCaching.java:181)
+	at com.intellij.codeInsight.intention.impl.ShowIntentionActionsHandler.lambda$invokeIntention$3(ShowIntentionActionsHandler.java:211)
+	at com.intellij.openapi.application.WriteAction.run(WriteAction.java:90)
+	at com.intellij.codeInsight.intention.impl.ShowIntentionActionsHandler.invokeIntention(ShowIntentionActionsHandler.java:213)
+	at com.intellij.codeInsight.intention.impl.ShowIntentionActionsHandler.lambda$null$1(ShowIntentionActionsHandler.java:188)
+	at com.intellij.openapi.application.TransactionGuardImpl.runSyncTransaction(TransactionGuardImpl.java:88)
+	at com.intellij.openapi.application.TransactionGuardImpl.submitTransactionAndWait(TransactionGuardImpl.java:153)
+	at com.intellij.codeInsight.intention.impl.ShowIntentionActionsHandler.lambda$chooseActionAndInvoke$2(ShowIntentionActionsHandler.java:187)
+	at com.intellij.openapi.command.impl.CoreCommandProcessor.executeCommand(CoreCommandProcessor.java:137)
+	at com.intellij.openapi.command.impl.CoreCommandProcessor.executeCommand(CoreCommandProcessor.java:95)
+	at com.intellij.openapi.command.impl.CoreCommandProcessor.executeCommand(CoreCommandProcessor.java:85)
+	at com.intellij.openapi.command.impl.CoreCommandProcessor.executeCommand(CoreCommandProcessor.java:71)
+	at com.intellij.codeInsight.intention.impl.ShowIntentionActionsHandler.chooseActionAndInvoke(ShowIntentionActionsHandler.java:186)
+	at com.intellij.codeInsight.intention.impl.IntentionListStep.lambda$applyAction$1(IntentionListStep.java:293)
+	at com.intellij.openapi.application.TransactionGuardImpl.performUserActivity(TransactionGuardImpl.java:195)
+	at com.intellij.ui.popup.AbstractPopup.lambda$dispose$7(AbstractPopup.java:1398)
+	at com.intellij.util.ui.UIUtil.invokeLaterIfNeeded(UIUtil.java:2850)
+	at com.intellij.ide.IdeEventQueue.ifFocusEventsInTheQueue(IdeEventQueue.java:168)
+	at com.intellij.ide.IdeEventQueue.executeWhenAllFocusEventsLeftTheQueue(IdeEventQueue.java:132)
+	at com.intellij.openapi.wm.impl.FocusManagerImpl.doWhenFocusSettlesDown(FocusManagerImpl.java:190)
+	at com.intellij.openapi.wm.impl.IdeFocusManagerImpl.doWhenFocusSettlesDown(IdeFocusManagerImpl.java:56)
+	at com.intellij.ui.popup.AbstractPopup.dispose(AbstractPopup.java:1392)
+	at com.intellij.ui.popup.WizardPopup.dispose(WizardPopup.java:160)
+	at com.intellij.ui.popup.list.ListPopupImpl.dispose(ListPopupImpl.java:307)
+	at com.intellij.openapi.util.Disposer$1.execute(Disposer.java:48)
+	at com.intellij.openapi.util.Disposer$1.execute(Disposer.java:44)
+	at com.intellij.openapi.util.objectTree.ObjectNode$1.execute(ObjectNode.java:138)
+	at com.intellij.openapi.util.objectTree.ObjectNode$1.execute(ObjectNode.java:107)
+	at com.intellij.openapi.util.objectTree.ObjectTree.executeActionWithRecursiveGuard(ObjectTree.java:169)
+	at com.intellij.openapi.util.objectTree.ObjectNode.execute(ObjectNode.java:107)
+	at com.intellij.openapi.util.objectTree.ObjectTree.executeAll(ObjectTree.java:144)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:129)
+	at com.intellij.openapi.util.Disposer.dispose(Disposer.java:125)
+	at com.intellij.ui.popup.WizardPopup.disposeAllParents(WizardPopup.java:263)
+	at com.intellij.ui.popup.list.ListPopupImpl.handleNextStep(ListPopupImpl.java:442)
+	at com.intellij.ui.popup.list.ListPopupImpl._handleSelect(ListPopupImpl.java:396)
+	at com.intellij.ui.popup.list.ListPopupImpl.handleSelect(ListPopupImpl.java:337)
+	at com.intellij.ui.popup.list.ListPopupImpl$1.actionPerformed(ListPopupImpl.java:250)
+	at com.intellij.ui.popup.WizardPopup.proceedKeyEvent(WizardPopup.java:378)
+	at com.intellij.ui.popup.WizardPopup.dispatch(WizardPopup.java:358)
+	at com.intellij.ui.popup.PopupDispatcher.dispatchKeyEvent(PopupDispatcher.java:126)
+	at com.intellij.ui.popup.PopupDispatcher.dispatch(PopupDispatcher.java:160)
+	at com.intellij.ide.IdePopupManager.dispatch(IdePopupManager.java:87)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.java:674)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.java:395)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2018-05-07 14:12:34,788 [ 108697]  ERROR - n.impl.NoSwingUnderWriteAction - IntelliJ IDEA 2018.1.1  Build #IC-181.4445.78 
+2018-05-07 14:12:34,788 [ 108697]  ERROR - n.impl.NoSwingUnderWriteAction - JDK: 1.8.0_152-release 
+2018-05-07 14:12:34,788 [ 108697]  ERROR - n.impl.NoSwingUnderWriteAction - VM: OpenJDK 64-Bit Server VM 
+2018-05-07 14:12:34,788 [ 108697]  ERROR - n.impl.NoSwingUnderWriteAction - Vendor: JetBrains s.r.o 
+2018-05-07 14:12:34,788 [ 108697]  ERROR - n.impl.NoSwingUnderWriteAction - OS: Mac OS X 
+2018-05-07 14:12:34,788 [ 108697]  ERROR - n.impl.NoSwingUnderWriteAction - Last Action: ShowIntentionActions 
+2018-05-07 14:12:34,788 [ 108697]  ERROR - n.impl.NoSwingUnderWriteAction - Current Command: Create Component Test 
+2018-05-07 14:13:08,871 [ 142780]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2018-05-07 14:13:08,872 [ 142781]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2018-05-07 14:13:08,872 [ 142781]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2018-05-07 14:13:08,889 [ 142798]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2018-05-07 14:13:08,891 [ 142800]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2018-05-07 14:13:08,892 [ 142801]   INFO - Types.impl.FileTypeManagerImpl - FileTypeManager: 366 auto-detected files
+Elapsed time on auto-detect: 175 ms 
+2018-05-07 14:13:08,896 [ 142805]   INFO - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 0 
+2018-05-07 14:13:08,898 [ 142807]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2018-05-07 14:13:08,901 [ 142810]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2018-05-07 14:13:08,903 [ 142812]   INFO - plication.impl.ApplicationImpl - Write action Statistics:
+Event number:     99
+Total time spent: 19149ms
+Average duration: 193ms
+Median  duration: 1ms
+Max  duration:    14268ms (it was 'write action (class com.intellij.openapi.application.WriteAction)') 
+2018-05-07 14:13:08,906 [ 142815]   INFO - plication.impl.ApplicationImpl - AnAction.update() Statistics:
+Event number:     12135
+Total time spent: 362ms
+Average duration: 0ms
+Median  duration: 0ms
+Max  duration:    173ms (it was 'Project View Popup Refactoring Group action update (class com.intellij.ide.actions.NonTrivialActionGroup)') 
+2018-05-07 14:13:08,906 [ 142815]   INFO - plication.impl.ApplicationImpl - Global instance threads created counter = 10; ProcessIOExecutorService threads: 3 
+2018-05-07 14:13:08,907 [ 142816]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2018-05-07 14:13:08,908 [ 142817]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
